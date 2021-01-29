@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 /**
  * Displays the home page component
  */
@@ -14,7 +13,7 @@ export class AppComponent{
     * Menu déroulant fermé
     */
    navbarOpen = false;
-   faStar = faStar;
+   
    /**
     * Ouvre et ferme le menu déroulant quand on clique
     */
