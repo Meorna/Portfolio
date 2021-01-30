@@ -11,13 +11,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-
-
-
-
-
-
-
 .page-section {
   padding: 6rem 0;
 }
@@ -84,11 +77,12 @@
   right: 1rem;
   bottom: 1rem;
 }
-.scroll-to-top a {
+.scroll-to-top button {
   width: 3.5rem;
   height: 3.5rem;
   background-color: rgba(33, 37, 41, 0.5);
   line-height: 3.1rem;
+  border: #2c3e50;
 }
 
 #mainNav {
