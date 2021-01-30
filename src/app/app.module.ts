@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { CoursesComponent } from './courses/courses.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CoursComponent } from './cours/cours.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CoursService } from './services/cours/cours.service';
 
 
 @NgModule({
@@ -20,14 +23,17 @@ import { ProfileComponent } from './profile/profile.component';
     CoursesComponent,
     ProjectsComponent,
     ProfileComponent,
+    CoursComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [
-    SkillService
+    SkillService,
+    CoursService
   ],
   bootstrap: [AppComponent]
 })

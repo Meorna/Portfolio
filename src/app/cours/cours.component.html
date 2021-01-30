@@ -1,0 +1,27 @@
+<!-- Cours Section-->
+<header class="masthead bg-info">
+    <section class="page-section bg-info text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">{{servCourses.listCourses[indexCours].name}}</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><fa-icon [icon]="faStar"></fa-icon></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ml-auto"><p class="lead">Speaker : {{servCourses.listCourses[indexCours].teacher}}</p></div>
+                <div class="col-lg-4 mr-auto"><p class="lead">Number of Hours : {{servCourses.listCourses[indexCours].hour}}</p></div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href routerLink="/courses">
+                    <i class="fas fa-download mr-2"></i>
+                    Back
+                </a>
+            </div>
+        </div>
+    </section>
+</header>

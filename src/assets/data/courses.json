@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Elastic Search",
+        "hour": "14.00",
+        "teacher": "Benjamin Clay"
+    },
+    {
+        "name": "Open Cloud",
+        "hour": "3.00",
+        "teacher": "Vincent Dupoy"
+    },
+    {
+        "name": "RGPD",
+        "hour": "10.30",
+        "teacher": "Lucie Anglade"
+    },
+    {
+        "name": "Lean Management",
+        "hour": "14.00",
+        "teacher": "Nicolas Ploquin"
+    },
+    {
+        "name": "Software Craftsmanship",
+        "hour": "14.00",
+        "teacher": "Benjamin Clay"
+    }
+    
+]
