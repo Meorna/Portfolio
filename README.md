@@ -24,7 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Documentation
 
-Run `npm compodoc` for a documentation. Navigate to `http://127.0.0.1:8080`. The doc will automatically reload if you change any of the source files.
+Run `npm run compodoc` for a documentation. Navigate to `http://127.0.0.1:8080`. The doc will automatically reload if you change any of the source files.
 
 ## Further help
 

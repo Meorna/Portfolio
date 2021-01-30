@@ -1,7 +1,8 @@
 import { HostListener } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faChevronUp, faMapMarkerAlt, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -10,8 +11,11 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 })
 export class FooterComponent implements OnInit {
   faChevronUp = faChevronUp;
+  faEnvelope = faEnvelope;
   faGithub = faGithub;
   faLinkedinIn = faLinkedinIn;
+  faMapMarkerAlt = faMapMarkerAlt;
+  faMobileAlt = faMobileAlt;
   isShow: boolean = false;
   topPosToStartShowing = 100;
   constructor() { }

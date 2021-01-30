@@ -72,8 +72,21 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
+import { CoursComponent } from &#x27;./cours/cours.component&#x27;;
+import { CoursesComponent } from &#x27;./courses/courses.component&#x27;;
+import { ProfileComponent } from &#x27;./profile/profile.component&#x27;;
+import { ProjectsComponent } from &#x27;./projects/projects.component&#x27;;
 
-const routes: Routes &#x3D; [];
+const routes: Routes &#x3D; [
+  { path: &quot;&quot;, component: ProfileComponent},
+  { path:&quot;courses&quot;, component:CoursesComponent, children:[
+    { path:&quot;&quot;, component:ProfileComponent},
+    { path:&quot;cours&quot;, component: CoursComponent}
+  ]},
+  { path:&quot;cours/:i&quot;, component:CoursComponent},
+  { path: &quot;projects&quot;, component: ProjectsComponent}
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
