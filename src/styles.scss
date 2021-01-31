@@ -275,3 +275,142 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #1a252f;
 }
+
+.bg-select {
+  background-color: #2c3e50 !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  padding-top: 0.5rem !important;
+  margin-top: 0.5rem !important;
+  border-radius: 0.5rem !important;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
+
+.bg-select:hover {
+  color: #17a2b8 !important;
+  cursor: pointer;
+}
+
+.selectdiv {
+  position: relative;
+  min-width: 5.5rem;
+}
+
+.selectdiv select:hover{
+  color: #17a2b8 !important;
+  cursor: pointer !important;
+}
+
+.selectdiv:hover::after{
+  color: #17a2b8 !important;
+  cursor: pointer !important;
+}
+
+.selectdiv::after {
+    content: '\f078';
+    font: normal normal normal 17px/1 FontAwesome;
+    color: white;
+    padding-left: 3.5rem !important;
+    padding-top: 0.5rem !important;
+    margin-top: 0.9rem !important;
+    position: absolute;
+    pointer-events: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  width: 100%;
+  float: right;
+  padding-right: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  padding-top: 0.5rem !important;
+  margin-top: 0.5rem !important;
+  border-radius: 0.5rem !important;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background-color: #2c3e50;
+  border: none;
+}
+
+select *{
+  text-transform: uppercase !important;
+}
+
+.selectdiv::-ms-expand {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #2c3e50;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 0.25rem solid #17a2b8;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 23px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #17a2b8;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #17a2b8;
+  color: white;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: '\f005';
+  font: normal normal normal 30px/1 FontAwesome;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -16.5px;
+  top: -6px;
+  color: #17a2b8;
+  box-sizing: inherit;
+}

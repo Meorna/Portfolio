@@ -1,0 +1,46 @@
+{
+    "navbar": {
+        "courses" : "Cours"
+    },
+    "profile": {
+        "iam1": "Je suis étudiante en dernière année d'école d'ingénieurs en informatique option Ingénierie du Cloud Computing à CY Tech Pau (anciennement EISTI).",
+        "iam2": "Je suis en contrat de professionnalisation à Capgemini Pau pour la durée d'un an.",
+        "iam3": "Je suis passionnée par l'informatique. J'aime apprendre de nouveaux concepts et travailler ma logique au quotidien grâce à de nombreux exercices.",
+        "iam4": "Je suis développeuse full-stack à la recherche d'un emploi à partir de septembre 2021 dans le domaine du DevOps aux alentours de Toulouse ou Bordeaux.",
+        "resume": {
+            "title": "Curriculum Vitae",
+            "background": {
+                "title": "Formation",
+                "date1": "2018",
+                "diploma1": "Licence Informatique",
+                "place1": "Université de Pau et des Pays de l’Adour – 64000 Pau, France.",
+                "date2": "2018 - Maintenant",
+                "diploma2": "Formation d'ingénieur en informatique option Ingénierie du Cloud Computing",
+                "place2": "CY Tech - 64000 Pau, France."         
+            },
+            "experiences": {
+                "title": "Expériences professionnelles",
+                "date1": "06/2018 - 08/2018",
+                "work1": "Stage de progrmmation web",
+                "place1": "Université des sciences et des technologies de Hanoi - Vietnam.",
+                "task11": "Mission réalisée : Développer une solution en JEE pour visualiser des graphes à l’aide d’une librairie open-source.",
+                "task12": "Environnement de développement : NetBeans.",
+                "task13": "Serveur web : Tomcat Apache.",
+                "task14": "Librairie open-source : KnetMaps.",
+                "date2": "09/2020 - Maintenant",
+                "work2": "Contrat de professionnalisation en tant que full-stack développeuse",
+                "place2": "Capgemini - 64000 Pau.",
+                "task21": "Mission réalisée : Refonte de l'eXperience Utilisateur (UX) d'une application web.",
+                "task22": "Front : AngularJS, HTML, CSS, Bootstrap.",
+                "task23": "Back : C#, SQL Server."
+            }
+
+        }
+    },
+    "projects": {
+        "title": "Mes projets"
+    },
+    "footer": {
+        "copyright": "Tous droits réservés." 
+    }
+}

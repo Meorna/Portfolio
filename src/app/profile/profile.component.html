@@ -1,18 +1,86 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <!-- Masthead-->
 <header class="masthead bg-info text-white text-center">
     <div class="container d-flex align-items-center flex-column">
-        <!-- Masthead Avatar Image-->
         <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" />
-        <!-- Masthead Heading-->
         <h1 class="masthead-heading text-uppercase mb-0">Romane Sallio</h1>
-        <!-- Icon Divider-->
         <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
             <div class="divider-custom-icon"><fa-icon [icon]="faStar"></fa-icon></div>
             <div class="divider-custom-line"></div>
         </div>
-        <!-- Masthead Subheading-->
-        <p class="masthead-subheading font-weight-light mb-0">Student in computer engineering school at CY-Tech - 09/2018-09/2021</p>
-        <p class="masthead-subheading font-weight-light mb-0">Work-study program at Capgemini PAU - 09/2020-09/2021 </p>
+        <p class="masthead-subheading font-weight-light mb-3">{{ 'profile.iam1' | translate }}</p>
+        <p class="masthead-subheading font-weight-light mb-3">{{ 'profile.iam2' | translate }}</p>
+        <p class="masthead-subheading font-weight-light mb-3">{{ 'profile.iam3' | translate }}</p>
+        <p class="masthead-subheading font-weight-light mb-3">{{ 'profile.iam4' | translate }}</p>         
     </div>
 </header>
+
+<!-- Resume Section -->
+<section id="resume" class="page-section portfolio resume">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{ 'profile.resume.title' | translate }}</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><fa-icon [icon]="faStar"></fa-icon></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="row">
+            <div>
+                <h3 class="resume-title">{{ 'profile.resume.background.title' | translate }}</h3>
+                <div class="resume-item" >
+                    <h4>{{ 'profile.resume.background.diploma2' | translate }}</h4>
+                    <h5>{{ 'profile.resume.background.date2' | translate }}</h5>
+                    <p><a href="https://cytech.cyu.fr/"><em>{{ 'profile.resume.background.place2' | translate }}</em></a></p>
+                </div>
+                <div class="resume-item">
+                    <h4>{{ 'profile.resume.background.diploma1' | translate }}</h4>
+                    <h5>{{ 'profile.resume.background.date1' | translate }}</h5>
+                    <p><a href="https://formation.univ-pau.fr/fr/catalogue/sciences-technologies-sante-STS/licence-12/licence-informatique-45_1/l1-et-l2-communes-l3-parcours-informatique-IGWFJW4L.html"><em>{{ 'profile.resume.background.place1' | translate }}</em></a></p>
+                </div>
+            </div>
+            <div >
+                <h3 class="resume-title">{{ 'profile.resume.experiences.title' | translate }}</h3>
+                <div class="resume-item">
+                    <h4>{{ 'profile.resume.experiences.work2' | translate }}</h4>
+                    <h5>{{ 'profile.resume.experiences.date2' | translate }}</h5>
+                    <p><em>{{ 'profile.resume.experiences.place2' | translate }} </em></p>
+                    <ul>
+                        <li>{{ 'profile.resume.experiences.task21' | translate }}</li>
+                        <li>{{ 'profile.resume.experiences.task22' | translate }}</li>
+                        <li>{{ 'profile.resume.experiences.task23' | translate }}</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>{{ 'profile.resume.experiences.work1' | translate }}</h4>
+                    <h5>{{ 'profile.resume.experiences.date1' | translate }}</h5>
+                    <p><em>{{ 'profile.resume.experiences.place1' | translate }} </em></p>
+                    <ul>
+                        <li>{{ 'profile.resume.experiences.task11' | translate }}</li>
+                        <li>{{ 'profile.resume.experiences.task12' | translate }}</li>
+                        <li>{{ 'profile.resume.experiences.task13' | translate }}</li>
+                        <li>{{ 'profile.resume.experiences.task14' | translate }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section-->
+<section class="page-section bg-info text-white mb-0" id="about">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-white">{{ 'projects.title' | translate }}</h2>
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><fa-icon [icon]="faStar"></fa-icon></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" >
+                <i class="fas fa-download mr-2"></i>
+                Free Download!
+            </a>
+        </div>
+    </div>
+</section>

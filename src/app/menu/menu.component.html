@@ -1,16 +1,27 @@
 <!-- Navigation-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href routerLink="/">Sallio Romane</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-info text-white rounded" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
-            <i class="fas fa-bars"></i>
+            <fa-icon [icon]="faBars"></fa-icon>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive" [ngClass]="{ 'show': navbarOpen }">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href routerLink="/courses">Courses</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href routerLink="/courses">{{ 'navbar.courses' | translate }}</a></li>
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <div class="selectdiv y-3 px-0 px-lg-3">
+                        <select #selectedLang (change)="switchLang(selectedLang.value)"> 
+                            <option *ngFor="let language of translate.getLangs()" 
+                                    [value]="language"
+                                    [selected]="language === translate.currentLang">
+                                <span class="optionselect">{{ language }}</span>
+                            </option>                 
+                        </select>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

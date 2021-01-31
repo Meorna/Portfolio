@@ -8,7 +8,9 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 })
 export class ProfileComponent implements OnInit {
   faStar = faStar;
-  constructor() { }
+  background: any;
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }

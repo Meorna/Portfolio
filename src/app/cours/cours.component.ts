@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faChevronLeft, faStar } from '@fortawesome/free-solid-svg-icons';
 import { CoursService } from '../services/cours/cours.service';
 
 @Component({
@@ -15,6 +15,7 @@ export class CoursComponent implements OnInit {
      */
    indexCours: number = 0;
    faStar = faStar;
+   faChevronLeft = faChevronLeft;
  
    /**
      * Constructeur

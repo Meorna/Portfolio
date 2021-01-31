@@ -12,14 +12,14 @@
             </div>
             <!-- About Section Content-->
             <div class="row">
-                <div class="col-lg-4 ml-auto"><p class="lead">Speaker : {{servCourses.listCourses[indexCours].teacher}}</p></div>
-                <div class="col-lg-4 mr-auto"><p class="lead">Number of Hours : {{servCourses.listCourses[indexCours].hour}}</p></div>
+                <div class="col-lg-4 ml-auto text-center"><p class="lead">Speaker : {{servCourses.listCourses[indexCours].teacher}}</p></div>
+                <div class="col-lg-4 mr-auto text-center"><p class="lead">Number of Hours : {{servCourses.listCourses[indexCours].hour}}</p></div>
             </div>
             <!-- About Section Button-->
             <div class="text-center mt-4">
                 <a class="btn btn-xl btn-outline-light" href routerLink="/courses">
-                    <i class="fas fa-download mr-2"></i>
-                    Back
+                    <fa-icon [icon]="faChevronLeft"></fa-icon>
+                    &#160; &#160;Back
                 </a>
             </div>
         </div>
