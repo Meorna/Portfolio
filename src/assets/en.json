@@ -1,6 +1,7 @@
 {
     "navbar": {
-        "courses" : "Courses"
+        "courses": "Courses",
+        "projects": "Projects"
     },
     "profile": {
         "iam1": "I'm a student in my last year of engineering school in computer science option Cloud Computing Engineering at CY Tech Pau (formerly EISTI).",
@@ -11,33 +12,66 @@
             "title": "Resume",
             "background": {
                 "title": "Background",
-                "date2": "2018 - Now",
-                "diplma2":"Training as a computer science engineer option Cloud Computing Engineering",
-                "place2": "CY Tech - 64000 Pau, France.",
-                "date1": "2018",
-                "diploma1": "Computer Science Degree",
-                "place1": "University of Pau and Pays de l'Adour - 64000 Pau, France."
+                "tabback": [
+                    {
+                        "date": "2018",
+                        "diploma": "Computer Science Degree",
+                        "place": "University of Pau and Pays de l'Adour - 64000 Pau, France."
+                    },
+                    {
+                        "date": "2018 - Now",
+                        "diploma": "Training as a computer science engineer option Cloud Computing Engineering",
+                        "place": "CY Tech - 64000 Pau, France."
+                    }
+                ]
             },
             "experiences": {
                 "title": "Professional Experience",
-                "date1":"06/2018 - 08/2018",
-                "work1":"Internship in web programming",
-                "place1":"University of Science and Technology of Hanoi – Vietnam.",
-                "task11": "Mission accomplished: Develop a JEE solution to visualize graphs using an open-source library.",
-                "task12": "Development environment : NetBeans.",
-                "task13": "Web server : Tomcat Apache.",
-                "task14": "Open-source library : KnetMaps.",
-                "date2": "09/2020 - Now",
-                "work2": "Professionalization contract as a full-stack developer",
-                "place2": "Capgemini - 64000 Pau.",
-                "task21": "Mission accomplished: Redesign of the User eXperience (UX) of a web application.",
-                "task22": "Front : AngularJS, HTML, CSS, Bootstrap.",
-                "task23": "Back : C#, SQL Server."
+                "tabexp": [
+                    {
+                        "date":"06/2018 - 08/2018",
+                        "work":"Internship in web programming",
+                        "place":"University of Science and Technology of Hanoi – Vietnam.",
+                        "tabtask": [
+                            {
+                                "task":"Mission accomplished: Develop a JEE solution to visualize graphs using an open-source library."
+                            },
+                            {
+                                "task": "Development environment : NetBeans."
+                            },
+                            {
+                                "task": "Web server : Tomcat Apache."
+                            },
+                            {
+                                "task": "Open-source library : KnetMaps."
+                            }
+                        ]
+                    },
+                    {
+                        "date":"09/2020 - Now",
+                        "work":"Professionalization contract as a full-stack developer",
+                        "place":"Capgemini - 64000 Pau.",
+                        "tabtask": [
+                            {
+                                "task":"Mission accomplished: Redesign of the User eXperience (UX) of a web application."
+                            },
+                            {
+                                "task": "Front : AngularJS, HTML, CSS, Bootstrap."
+                            },
+                            {
+                                "task": "Back : C#, SQL Server."
+                            }
+                        ]
+                    }
+                ]
             }
         }
     },
     "projects": {
         "title": "My projects"
+    },
+    "courses": {
+        "title": "My courses"
     },
     "footer": {
         "copyright": "All rights reserved." 
