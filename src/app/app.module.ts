@@ -14,7 +14,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CoursComponent } from './cours/cours.component';
 
-import { CoursService } from './services/cours/cours.service';
+import { CoursesService } from './services/courses/courses.service';
+import { ProjectsService } from './services/projects/projects.service';
+import { ProjectComponent } from './project/project.component';
 
 
 @NgModule({
@@ -26,6 +28,7 @@ import { CoursService } from './services/cours/cours.service';
     ProjectsComponent,
     ProfileComponent,
     CoursComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,13 +46,9 @@ import { CoursService } from './services/cours/cours.service';
     }),
   ],
   providers: [
-    CoursService
+    CoursesService,
+    ProjectsService
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-// AOT compilation support
-export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-}

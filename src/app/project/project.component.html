@@ -1,0 +1,30 @@
+<!-- Cours Section-->
+<header class="masthead bg-info">
+    <section class="page-section bg-info text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">{{servProjects.listProjects[indexProject].name}}</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><fa-icon [icon]="faStar"></fa-icon></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center"><p class="lead">Creator : {{servProjects.listProjects[indexProject].creator}}</p></div>
+                <div class="col-lg-4 mr-auto text-center"><p class="lead">Date : {{servProjects.listProjects[indexProject].date}}</p></div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href routerLink="/projects">
+                    <div class="container">
+                        <div class="row justify-content-around justify-content-space-between">
+                            <fa-icon [icon]="faChevronLeft"></fa-icon>&#160; &#160;&#160;&#160;<h3 class="text-uppercase text-white">Back</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</header>

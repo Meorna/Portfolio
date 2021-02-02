@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faPlus, faStar } from '@fortawesome/free-solid-svg-icons';
-import { CoursService } from '../services/cours/cours.service';
+import { CoursesService } from '../services/courses/courses.service';
 
 @Component({
   selector: 'app-courses',
@@ -11,7 +11,9 @@ export class CoursesComponent implements OnInit {
   faStar = faStar;
   faPlus = faPlus;
 
-  constructor(public servCourses:CoursService) { }
+
+  constructor(public servCourses:CoursesService) { 
+  }
 
   ngOnInit(): void {
   }

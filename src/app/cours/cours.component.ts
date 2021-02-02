@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { faArrowLeft, faChevronLeft, faStar } from '@fortawesome/free-solid-svg-icons';
-import { CoursService } from '../services/cours/cours.service';
+import { CoursesService } from '../services/courses/courses.service';
 
 @Component({
   selector: 'app-cours',
@@ -22,7 +22,7 @@ export class CoursComponent implements OnInit {
      * @param {CoursesService} servCours le service d'accès aux données du fichier etudiants.json
      * @param {ActivatedRoute} routeParametres le service d'accès aux routes
      */
-   constructor(public servCourses:CoursService, private routeParametres:ActivatedRoute) { }
+   constructor(public servCourses:CoursesService, private routeParametres:ActivatedRoute) { }
  
    /**
      * Récupérer l'étudiant séléctionné en fonction de son index

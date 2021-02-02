@@ -12,7 +12,18 @@
         <p class="masthead-subheading font-weight-light mb-3">{{ 'profile.iam1' | translate }}</p>
         <p class="masthead-subheading font-weight-light mb-3">{{ 'profile.iam2' | translate }}</p>
         <p class="masthead-subheading font-weight-light mb-3">{{ 'profile.iam3' | translate }}</p>
-        <p class="masthead-subheading font-weight-light mb-3">{{ 'profile.iam4' | translate }}</p>         
+        <p class="masthead-subheading font-weight-light mb-3">{{ 'profile.iam4' | translate }}</p>
+        <div class="container mt-5">
+            <div class="row justify-content-around justify-content-space-between">
+                <a class="btn btn-xl btn-outline-light" href routerLink="/projects">
+                    
+                    <h3 class="page-section-heading text-center text-uppercase text-white">{{ 'projects.title' | translate }}</h3>
+                </a>
+                <a class="btn btn-xl btn-outline-light" href routerLink="/courses">
+                    <h3 class="page-section-heading text-center text-uppercase text-white">{{ 'courses.title' | translate }}</h3>
+                </a>
+            </div> 
+        </div>   
     </div>
 </header>
 
@@ -75,12 +86,6 @@
             <div class="divider-custom-line"></div>
             <div class="divider-custom-icon"><fa-icon [icon]="faStar"></fa-icon></div>
             <div class="divider-custom-line"></div>
-        </div>
-        <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light" >
-                <i class="fas fa-download mr-2"></i>
-                Free Download!
-            </a>
         </div>
     </div>
 </section>

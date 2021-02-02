@@ -2,27 +2,32 @@
     {
         "name": "Elastic Search",
         "hour": "14.00",
-        "teacher": "Benjamin Clay"
+        "teacher": "Benjamin Clay",
+        "img": "assets/img/portfolio/elasticSearch.png"
     },
     {
         "name": "Open Cloud",
         "hour": "3.00",
-        "teacher": "Vincent Dupoy"
+        "teacher": "Vincent Dupoy",
+        "img": "assets/img/portfolio/openCloud.png"
     },
     {
         "name": "RGPD",
         "hour": "10.30",
-        "teacher": "Lucie Anglade"
+        "teacher": "Lucie Anglade",
+        "img": "assets/img/portfolio/rgpd.png"
     },
     {
         "name": "Lean Management",
         "hour": "14.00",
-        "teacher": "Nicolas Ploquin"
+        "teacher": "Nicolas Ploquin",
+        "img": "assets/img/portfolio/leanManagement.png"
     },
     {
         "name": "Software Craftsmanship",
         "hour": "14.00",
-        "teacher": "Benjamin Clay"
+        "teacher": "Benjamin Clay",
+        "img": "assets/img/portfolio/softwareCraftsmanship.png"
     }
     
 ]
