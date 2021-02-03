@@ -1,34 +1,34 @@
+import { AppComponent } from './app.component';
+import { CourseComponent } from './course/course.component';
+import { CoursesComponent } from './courses/courses.component';
+import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProjectComponent } from './project/project.component';
+import { ProjectsComponent } from './projects/projects.component';
+
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FooterComponent } from './footer/footer.component';
-import { CoursesComponent } from './courses/courses.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ProfileComponent } from './profile/profile.component';
-import { CoursComponent } from './cours/cours.component';
-
 import { CoursesService } from './services/courses/courses.service';
 import { ProjectsService } from './services/projects/projects.service';
-import { ProjectComponent } from './project/project.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
-    FooterComponent,
+    CourseComponent,
     CoursesComponent,
-    ProjectsComponent,
+    FooterComponent,
+    MenuComponent,
     ProfileComponent,
-    CoursComponent,
     ProjectComponent,
+    ProjectsComponent, 
+    
   ],
   imports: [
     BrowserModule,

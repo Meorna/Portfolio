@@ -3,11 +3,13 @@
         "courses" : "Cours",
         "projects": "Projets"
     },
-    "profile": {
-        "iam1": "Je suis étudiante en dernière année d'école d'ingénieurs en informatique option Ingénierie du Cloud Computing à CY Tech Pau (anciennement EISTI).",
-        "iam2": "Je suis en contrat de professionnalisation à Capgemini Pau pour la durée d'un an.",
-        "iam3": "Je suis passionnée par l'informatique. J'aime apprendre de nouveaux concepts et travailler ma logique au quotidien grâce à de nombreux exercices.",
-        "iam4": "Je suis développeuse full-stack à la recherche d'un emploi à partir de septembre 2021 dans le domaine du DevOps aux alentours de Toulouse ou Bordeaux.",
+    "profile": { 
+        "iam": [
+            "Je suis étudiante en dernière année d'école d'ingénieurs en informatique option Ingénierie du Cloud Computing à CY Tech Pau (anciennement EISTI).",
+            "Je suis en contrat de professionnalisation à Capgemini Pau pour la durée d'un an.",
+            "Je suis passionnée par l'informatique. J'aime apprendre de nouveaux concepts et travailler ma logique au quotidien grâce à de nombreux exercices.",
+            "Je suis développeuse full-stack à la recherche d'un emploi à partir de septembre 2021 dans le domaine du DevOps aux alentours de Toulouse ou Bordeaux."
+        ],
         "resume": {
             "title": "Curriculum Vitae",
             "background": {
@@ -69,11 +71,22 @@
         }
     },
     "projects": {
-        "title": "Mes projets"
+        "title": "Mes projets",
+        "creator": "Créateur",
+        "objective": "Objectif",
+        "project": [
+            {
+                "goal": "Création d’un bot discord capable d’interagir avec l’api Chuck Norris Jokes."
+            },
+            {
+                "goal": "Créez un micro shell, que vous appellerez eistish, qui doit servir à lancer des commandes et à afficher les codes de sortie et les temps sur leur exécution."
+            }
+        ]
     },
     "courses": {
         "title": "Mes cours"
     },
+    "back": "retour",
     "footer": {
         "copyright": "Tous droits réservés." 
     }

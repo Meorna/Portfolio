@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 /**
- * Displays the home page component
+ * Displays the home page component.
  */
 @Component({
   selector: 'app-root',
@@ -10,12 +10,12 @@ import { Component, OnInit } from '@angular/core';
 
 export class AppComponent{
   /**
-    * Menu déroulant fermé
+    * Dropdown menu closed.
     */
    navbarOpen = false;
    
    /**
-    * Ouvre et ferme le menu déroulant quand on clique
+    * Opens and closes the drop-down menu when clicked.
     */
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
