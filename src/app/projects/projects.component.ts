@@ -13,6 +13,7 @@ export class ProjectsComponent implements OnInit {
   constructor(public servProjects:ProjectsService) { }
 
   ngOnInit(): void {
+    this.servProjects.getProjectsFromBack();
   }
 
 }
