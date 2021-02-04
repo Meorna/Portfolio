@@ -16,6 +16,7 @@ export class CoursesComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.servCourses.getCoursesFromBack();
   }
 
 }
