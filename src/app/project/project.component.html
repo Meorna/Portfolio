@@ -1,62 +1,60 @@
 <!-- Cours Section-->
 
-    <section class="page-section mb-0 mt-5" id="about">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <!-- About Section Heading-->
-                    <h2 class="page-section-heading text-center text-uppercase text-secondary">{{servProjects.listProjects[indexProject].name}}</h2>
-                    <!-- Icon Divider-->
-                    <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><fa-icon [icon]="faStar"></fa-icon></div>
-                        <div class="divider-custom-line"></div>
-                    </div>
-                    <img class="img-fluid rounded mb-5" src={{servProjects.listProjects[indexProject].img}} alt="" />
-                    <!-- About Section Content-->
-                    <table class="table justify-content-center">
-                        <tbody>
-                          <tr>
+<section class="page-section mb-0 mt-5" id="about">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary">{{servProjects.listProjects[indexProject].name}}</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><fa-icon [icon]="faStar"></fa-icon></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <img class="img-fluid rounded mb-5" src={{servProjects.listProjects[indexProject].img}} alt="" />
+                <!-- About Section Content-->
+                <table class="table justify-content-center">
+                    <tbody>
+                        <tr>
                             <th scope="row">{{ 'projects.creator' | translate }}</th>
                             <td>{{servProjects.listProjects[indexProject].creator}}</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <th scope="row">Date</th>
                             <td>{{servProjects.listProjects[indexProject].date}}</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <th scope="row">{{ 'projects.objective' | translate }}</th>
                             <td>{{ 'projects.project.' + indexProject + '.goal' | translate }}</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <th scope="row">Code</th>
                             <td><a href ={{servProjects.listProjects[indexProject].link}}>{{servProjects.listProjects[indexProject].link}}</a></td>
-                          </tr>
-                        </tbody>
-                    </table>
-                    <!--<div style="display: block">
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="display: block; width: 50% !important; margin-left: auto; margin-right: auto;" class="mb-3">
                         <canvas mdbChart
                             [chartType]="chartType"
                             [datasets]="chartDatasets"
                             [labels]="chartLabels"
                             [colors]="chartColors"
                             [options]="chartOptions"
-                            [legend]="true"
-                            (chartHover)="chartHovered($event)"
-                            (chartClick)="chartClicked($event)">
+                            [legend]="true">
                         </canvas>
-                      </div>-->
-                    <!-- About Section Button-->
-                    <div class="text-center mt-4b">
-                        <a class="btn btn-xl btn-outline-light bg-info" href routerLink="/projects">
-                            <div class="container">
-                                <div class="row justify-content-around justify-content-space-between">
-                                    <fa-icon [icon]="faChevronLeft"></fa-icon>&#160; &#160;&#160;&#160;<h3 class="text-uppercase text-white mb-0">{{'back' | translate}}</h3>
-                                </div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4b">
+                    <a class="btn btn-xl btn-outline-light bg-info" href routerLink="/projects">
+                        <div class="container">
+                            <div class="row justify-content-around justify-content-space-between">
+                                <fa-icon [icon]="faChevronLeft"></fa-icon>&#160; &#160;&#160;&#160;<h3 class="text-uppercase text-white mb-0">{{'back' | translate}}</h3>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>

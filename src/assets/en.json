@@ -83,11 +83,14 @@
         ]
     },
     "courses": {
-        "title": "My courses"
+        "title": "My courses",
+        "speaker": "Speaker",
+        "hour": "Number of hours"
     },
     "back": "back",
     "footer": {
-        "copyright": "All rights reserved." 
+        "copyright": "All rights reserved.", 
+        "web": "Around the Web"
     }
 
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { faChevronLeft, faStar } from '@fortawesome/free-solid-svg-icons';
 import { ProjectsService } from '../services/projects/projects.service';
+import { ChartsModule} from 'angular-bootstrap-md';
 
 @Component({
   selector: 'app-project',
@@ -17,28 +18,31 @@ export class ProjectComponent implements OnInit {
     faStar = faStar;
     faChevronLeft = faChevronLeft;
 
-    /*public chartType: string = 'doughnut';
+    public chartType: string = 'doughnut';
 
-    public chartDatasets: Array<any> = [
-      { data: [300, 50, 100, 40, 120], label: 'My First dataset' }
-    ];
+    public chartDatasets: Array<any> = [];
 
-    public chartLabels: Array<any> = ['Red', 'Green', 'Yellow', 'Grey', 'Dark Grey'];
+    public chartLabels: Array<any> = [];
 
     public chartColors: Array<any> = [
       {
-        backgroundColor: ['#F7464A', '#46BFBD', '#FDB45C', '#949FB1', '#4D5360'],
-        hoverBackgroundColor: ['#FF5A5E', '#5AD3D1', '#FFC870', '#A8B3C5', '#616774'],
+        backgroundColor: ['#17a2b8', '#0ECFB4', '#0EC477', '#0E4CC4', '#0E82CF'],
+        hoverBackgroundColor: ['#2c3e50', '#2c3e50', '#2c3e50', '#2c3e50', '#2c3e50'],
         borderWidth: 2,
       }
     ];
 
     public chartOptions: any = {
-      responsive: true
+      responsive: true,
+      legend: {
+        label: {
+          fontSize: '1.5rem'
+        }
+      }
     };
     public chartClicked(e: any): void { }
-    public chartHovered(e: any): void { }*/
-  
+    public chartHovered(e: any): void { }
+
     /**
       * Constructeur
       * @param {CoursesService} servCours le service d'accès aux données du fichier etudiants.json
@@ -59,6 +63,10 @@ export class ProjectComponent implements OnInit {
           // Test si le paramètre est dans la route
           if(parametres['i']){
             this.indexProject = + parametres['i'];
+            this.chartDatasets = [
+              { data: this.servProjects.listProjects[this.indexProject].percent, label: 'My First dataset' }
+            ];
+            this.chartLabels = this.servProjects.listProjects[this.indexProject].language;
             console.log(this.indexProject);
             console.log("test" + this.servProjects.listProjects[this.indexProject].name);
           }

@@ -14,6 +14,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 import { CoursesService } from './services/courses/courses.service';
 import { ProjectsService } from './services/projects/projects.service';
@@ -44,6 +46,7 @@ import { ProjectsService } from './services/projects/projects.service';
         deps: [HttpClient], 
       }, 
     }),
+    MDBBootstrapModule.forRoot(),
   ],
   providers: [
     CoursesService,

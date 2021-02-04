@@ -4,14 +4,18 @@
         "date": "11/2020",
         "creator": "Romane Sallio",
         "img": "assets/img/portfolio/discord.png",
-        "link": "https://github.com/Meorna/Discord"
+        "link": "https://github.com/Meorna/BotDiscordChuckNorris",
+        "language": ["JavaScript", "Shell", "Dockerfile"],
+        "percent": [92.7, 3.9,  3.4]
     },
     {
         "name": "Micro Shell",
         "date": "04/2020",
         "creator": "Romane Sallio",
         "img": "assets/img/portfolio/shell.png",
-        "link": "https://github.com/Meorna/MicroShell"
+        "link": "https://github.com/Meorna/MicroShell",
+        "language": ["C", "Makefile"],
+        "percent": [94.1, 5.9]
     }
     
 ]

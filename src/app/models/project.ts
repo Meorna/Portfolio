@@ -5,4 +5,6 @@ export interface ProjectI {
     creator?:string;
     img?:string;
     link?:string;
+    language:Array<any>;
+    percent:Array<any>;
 }

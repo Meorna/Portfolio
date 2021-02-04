@@ -84,10 +84,13 @@
         ]
     },
     "courses": {
-        "title": "Mes cours"
+        "title": "Mes cours",
+        "speaker": "Intervenant",
+        "hour": "Nombre d'heures"
     },
     "back": "retour",
     "footer": {
-        "copyright": "Tous droits réservés." 
+        "copyright": "Tous droits réservés.", 
+        "web": "Sur le web"
     }
 }
