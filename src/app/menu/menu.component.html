@@ -9,8 +9,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive" [ngClass]="{ 'show': navbarOpen }">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href routerLink="/projects" (click)="toggleNavbar()">{{ 'navbar.projects' | translate }}</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href routerLink="/courses" (click)="toggleNavbar()">{{ 'navbar.courses' | translate }}</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href routerLink="/resume" (click)="gotoTop()">{{ 'navbar.resume' | translate }}</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href routerLink="/projects" (click)="gotoTop()">{{ 'navbar.projects' | translate }}</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href routerLink="/courses" (click)="gotoTop()">{{ 'navbar.courses' | translate }}</a></li>
                 <li class="nav-item mx-0 mx-lg-1">
                     <div class="selectdiv y-3 px-0 px-lg-3">
                         <select #selectedLang (change)="switchLang(selectedLang.value)"> 

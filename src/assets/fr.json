@@ -1,5 +1,6 @@
 {
     "navbar": {
+        "resume": "CV",
         "courses" : "Cours",
         "projects": "Projets"
     },
@@ -11,7 +12,7 @@
             "Je suis développeuse full-stack à la recherche d'un emploi à partir de septembre 2021 dans le domaine du DevOps aux alentours de Toulouse ou Bordeaux."
         ],
         "resume": {
-            "title": "Curriculum Vitae",
+            "title": "Mon Curriculum Vitae",
             "background": {
                 "title": "Formation",
                 "tabback": [
@@ -32,7 +33,7 @@
                 "tabexp": [
                     {
                         "date":"06/2018 - 08/2018",
-                        "work":"Stage de progrmmation web",
+                        "work":"Stage de programmation web",
                         "place":"Université des sciences et des technologies de Hanoi - Vietnam.",
                         "tabtask": [
                             {
@@ -66,8 +67,12 @@
                         ]
                     }
                 ]
+            },
+            "skills": {
+                "title": "Compétences",
+                "language": "Langages de programmation",
+                "technical": "Compétences Technique"
             }
-
         }
     },
     "projects": {

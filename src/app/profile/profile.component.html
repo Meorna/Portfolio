@@ -12,79 +12,18 @@
         <div *ngFor="let iam of 'profile.iam' | translate ">
             <p class="masthead-subheading font-weight-light mb-3">{{iam}}</p>
         </div>
-        <div class="container mt-5">
+        <div class="container mt-3">
             <div class="row justify-content-around justify-content-space-between">
-                <a class="btn btn-xl btn-outline-light" href routerLink="/projects">
-                    
+                <a class="btn btn-xl btn-outline-light mb-3" href routerLink="/resume" (click)="gotoTop()">
+                    <h3 class="page-section-heading text-center text-uppercase text-white mb-0">{{ 'profile.resume.title' | translate }}</h3>
+                </a>
+                <a class="btn btn-xl btn-outline-light mb-3" href routerLink="/projects" (click)="gotoTop()">
                     <h3 class="page-section-heading text-center text-uppercase text-white mb-0">{{ 'projects.title' | translate }}</h3>
                 </a>
-                <a class="btn btn-xl btn-outline-light" href routerLink="/courses">
+                <a class="btn btn-xl btn-outline-light mb-3" href routerLink="/courses" (click)="gotoTop()">
                     <h3 class="page-section-heading text-center text-uppercase text-white mb-0">{{ 'courses.title' | translate }}</h3>
                 </a>
             </div> 
         </div>   
     </div>
 </header>
-
-<!-- Resume Section -->
-<section id="resume" class="page-section portfolio resume">
-    <div class="container">
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{ 'profile.resume.title' | translate }}</h2>
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><fa-icon [icon]="faStar"></fa-icon></div>
-            <div class="divider-custom-line"></div>
-        </div>
-        <div class="row">
-            <div>
-                <h3 class="resume-title">{{ 'profile.resume.background.title' | translate }}</h3>
-                <div class="resume-item" >
-                    <h4>{{ 'profile.resume.background.tabback.1.diploma' | translate }}</h4>
-                    <h5>{{ 'profile.resume.background.tabback.1.date' | translate }}</h5>
-                    <p><a href="https://cytech.cyu.fr/"><em>{{ 'profile.resume.background.tabback.1.place' | translate }}</em></a></p>
-                </div>
-                <div class="resume-item">
-                    <h4>{{ 'profile.resume.background.tabback.0.diploma' | translate }}</h4>
-                    <h5>{{ 'profile.resume.background.tabback.0.date' | translate }}</h5>
-                    <p><a href="https://formation.univ-pau.fr/fr/catalogue/sciences-technologies-sante-STS/licence-12/licence-informatique-45_1/l1-et-l2-communes-l3-parcours-informatique-IGWFJW4L.html"><em>{{ 'profile.resume.background.tabback.0.place' | translate }}</em></a></p>
-                </div>
-            </div>
-            <div >
-                <h3 class="resume-title">{{ 'profile.resume.experiences.title' | translate }}</h3>
-                <div class="resume-item">
-                    <h4>{{ 'profile.resume.experiences.tabexp.1.work' | translate }}</h4>
-                    <h5>{{ 'profile.resume.experiences.tabexp.1.date' | translate }}</h5>
-                    <p><a href="https://www.capgemini.com/fr-fr/"><em>{{ 'profile.resume.experiences.tabexp.1.place' | translate }} </em></a></p>
-                    <ul>
-                        <li>{{ 'profile.resume.experiences.tabexp.1.tabtask.0.task' | translate }}</li>
-                        <li>{{ 'profile.resume.experiences.tabexp.1.tabtask.1.task' | translate }}</li>
-                        <li>{{ 'profile.resume.experiences.tabexp.1.tabtask.2.task' | translate }}</li>
-                    </ul>
-                </div>
-                <div class="resume-item">
-                    <h4>{{ 'profile.resume.experiences.tabexp.0.work' | translate }}</h4>
-                    <h5>{{ 'profile.resume.experiences.tabexp.0.date' | translate }}</h5>
-                    <p><a href="https://www.usth.edu.vn/fr/"><em>{{ 'profile.resume.experiences.tabexp.0.place' | translate }} </em></a></p>
-                    <ul>
-                        <li>{{ 'profile.resume.experiences.tabexp.0.tabtask.0.task' | translate }}</li>
-                        <li>{{ 'profile.resume.experiences.tabexp.0.tabtask.1.task' | translate }}</li>
-                        <li>{{ 'profile.resume.experiences.tabexp.0.tabtask.2.task' | translate }}</li>
-                        <li>{{ 'profile.resume.experiences.tabexp.0.tabtask.3.task' | translate }}</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Section-->
-<!--<section class="page-section bg-info text-white mb-0" id="about">
-    <div class="container">
-        <h2 class="page-section-heading text-center text-uppercase text-white">{{ 'projects.title' | translate }}</h2>
-        <div class="divider-custom divider-light">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><fa-icon [icon]="faStar"></fa-icon></div>
-            <div class="divider-custom-line"></div>
-        </div>
-    </div>
-</section>-->

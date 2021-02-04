@@ -18,6 +18,14 @@ export class ProjectComponent implements OnInit {
     faStar = faStar;
     faChevronLeft = faChevronLeft;
 
+    gotoTop() {
+      window.scroll({ 
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+      });
+    }
+
     public chartType: string = 'doughnut';
 
     public chartDatasets: Array<any> = [];
@@ -42,6 +50,7 @@ export class ProjectComponent implements OnInit {
     };
     public chartClicked(e: any): void { }
     public chartHovered(e: any): void { }
+    
 
     /**
       * Constructeur

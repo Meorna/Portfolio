@@ -10,6 +10,7 @@ import { ProjectsService } from '../services/projects/projects.service';
 export class ProjectsComponent implements OnInit {
   faStar = faStar;
   faPlus = faPlus;
+
   constructor(public servProjects:ProjectsService) { }
 
   ngOnInit(): void {

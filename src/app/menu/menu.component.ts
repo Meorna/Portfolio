@@ -32,9 +32,17 @@ export class MenuComponent implements OnInit {
      * Ouvre et ferme le menu déroulant quand on clique
      */
    toggleNavbar() {
-     console.log("click");
      this.navbarOpen = !this.navbarOpen;
    }
+
+   gotoTop() {
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+    this.toggleNavbar();
+  }
    
    /**
      * Vide

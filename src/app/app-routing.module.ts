@@ -6,9 +6,10 @@ import { ProjectsComponent } from './projects/projects.component';
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
-  { path: "", component: ProfileComponent},
+  { path:"", component: ProfileComponent},
   { path:"courses", component:CoursesComponent, children:[
     { path:"", component:ProfileComponent},
     { path:"course", component: CourseComponent}
@@ -19,7 +20,8 @@ const routes: Routes = [
     { path:"", component:ProfileComponent},
     { path:"project", component: ProjectComponent}
   ]},
-  { path:"project/:i", component:ProjectComponent}
+  { path:"project/:i", component:ProjectComponent},
+  { path:"resume", component: ResumeComponent}
 
 ];
 

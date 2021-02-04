@@ -19,6 +19,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { CoursesService } from './services/courses/courses.service';
 import { ProjectsService } from './services/projects/projects.service';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProjectsService } from './services/projects/projects.service';
     MenuComponent,
     ProfileComponent,
     ProjectComponent,
-    ProjectsComponent, 
+    ProjectsComponent,
+    ResumeComponent, 
     
   ],
   imports: [

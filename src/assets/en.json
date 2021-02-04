@@ -1,5 +1,6 @@
 {
     "navbar": {
+        "resume": "Resume",
         "courses": "Courses",
         "projects": "Projects"
     },
@@ -11,7 +12,7 @@
             "I am a full-stack developer looking for a job from September 2021 in the DevOps area around Toulouse or Bordeaux.I am a full-stack developer looking for a job from September 2021 in the DevOps area around Toulouse or Bordeaux."  
         ],
         "resume": {
-            "title": "Resume",
+            "title": "My Resume",
             "background": {
                 "title": "Background",
                 "tabback": [
@@ -66,6 +67,11 @@
                         ]
                     }
                 ]
+            },
+            "skills": {
+                "title": "Skills",
+                "language": "Programming languages",
+                "technical": "Technical Skills"
             }
         }
     },

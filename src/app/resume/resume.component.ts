@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { ChartsModule} from 'angular-bootstrap-md';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+    selector: 'app-resume',
+    templateUrl: './resume.component.html',
+    styleUrls: ['./resume.component.scss']
 })
-export class ProfileComponent implements OnInit {
+export class ResumeComponent implements OnInit {
   faStar = faStar;
   background: any;
 
@@ -51,18 +50,9 @@ export class ProfileComponent implements OnInit {
   };
   public chartClicked(e: any): void { }
   public chartHovered(e: any): void { }
+    constructor() { }
 
-  gotoTop() {
-    window.scroll({ 
-      top: 0, 
-      left: 0, 
-      behavior: 'smooth' 
-    });
-  }
-  constructor() { 
-  }
-
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
 }
