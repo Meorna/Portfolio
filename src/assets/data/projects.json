@@ -4,7 +4,7 @@
         "date": "11/2020",
         "creator": "Romane Sallio",
         "img": "assets/img/portfolio/discord.png",
-        "link": "https://github.com/Meorna/BotDiscordChuckNorris",
+        "link": "https://github.com/Meorna/BotDiscord",
         "language": ["JavaScript", "Shell", "Dockerfile"],
         "percent": [92.7, 3.9,  3.4]
     },
