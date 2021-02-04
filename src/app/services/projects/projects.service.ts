@@ -15,12 +15,12 @@ export class ProjectsService {
     * Récupère les données du fichier json
     */
    getProjectsFromBack(){
-     this.http.get<Array<ProjectI>>("/assets/data/projects.json").subscribe(
+     this.http.get<Array<ProjectI>>("/assets/projects.json").subscribe(
        data => {
          this.listProjects = data;
        },
        (error) => {
-         console.log('Erreur ! : ' + error);
+         console.log('Erreur Projects Data! : ' + error);
        }
      )
    }

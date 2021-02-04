@@ -15,12 +15,12 @@ export class CoursesService {
      * Récupère les données du fichier json
      */
     getCoursesFromBack(){
-      this.http.get<Array<CourseI>>("/assets/data/courses.json").subscribe(
+      this.http.get<Array<CourseI>>("/assets/courses.json").subscribe(
         data => {
           this.listCourses = data;
         },
         (error) => {
-          console.log('Erreur ! : ' + error);
+          console.log('Erreur Courses data! : ' + error);
         }
       )
     }
