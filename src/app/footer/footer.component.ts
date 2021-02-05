@@ -21,8 +21,7 @@ export class FooterComponent implements OnInit {
   constructor() { }
   @HostListener('window:scroll')
   checkScroll() {
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    console.log('[scroll]', scrollPosition, 'top', this.topPosToStartShowing);  
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;  
     if (scrollPosition >= this.topPosToStartShowing) {
       this.isShow = true;
     } else {

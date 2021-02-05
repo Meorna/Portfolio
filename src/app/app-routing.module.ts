@@ -12,16 +12,10 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path:"", component: ProfileComponent},
   { path:"resume", component: ResumeComponent},
-  { path:"courses", component:CoursesComponent, children:[
-    { path:"", component:ProfileComponent},
-    { path:"course", component: CourseComponent}
-  ]},
+  { path:"courses", component:CoursesComponent},
   { path:"course/:i", component:CourseComponent},
 
-  { path: "projects", component: ProjectsComponent, children:[
-    { path:"", component:ProfileComponent},
-    { path:"project", component: ProjectComponent}
-  ]},
+  { path: "projects", component: ProjectsComponent},
   { path:"project/:i", component:ProjectComponent},
 
 ];

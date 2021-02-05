@@ -13,6 +13,11 @@ export class CoursesComponent implements OnInit {
 
 
   constructor(public servCourses:CoursesService) { 
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
   }
 
   ngOnInit(): void {

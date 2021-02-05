@@ -11,7 +11,13 @@ export class ProjectsComponent implements OnInit {
   faStar = faStar;
   faPlus = faPlus;
 
-  constructor(public servProjects:ProjectsService) { }
+  constructor(public servProjects:ProjectsService) { 
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+  }
 
   ngOnInit(): void {
     this.servProjects.getProjectsFromBack();

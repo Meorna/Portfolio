@@ -34,15 +34,6 @@ export class MenuComponent implements OnInit {
    toggleNavbar() {
      this.navbarOpen = !this.navbarOpen;
    }
-
-   gotoTop() {
-    window.scroll({ 
-      top: 0, 
-      left: 0, 
-      behavior: 'smooth' 
-    });
-    this.toggleNavbar();
-  }
    
    /**
      * Vide

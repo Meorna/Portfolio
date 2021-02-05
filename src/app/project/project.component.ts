@@ -18,14 +18,6 @@ export class ProjectComponent implements OnInit {
     faStar = faStar;
     faChevronLeft = faChevronLeft;
 
-    gotoTop() {
-      window.scroll({ 
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth' 
-      });
-    }
-
     public chartType: string = 'doughnut';
 
     public chartDatasets: Array<any> = [];
@@ -57,7 +49,13 @@ export class ProjectComponent implements OnInit {
       * @param {CoursesService} servCours le service d'accès aux données du fichier etudiants.json
       * @param {ActivatedRoute} routeParametres le service d'accès aux routes
       */
-    constructor(public servProjects:ProjectsService, private routeParametres:ActivatedRoute) { }
+    constructor(public servProjects:ProjectsService, private routeParametres:ActivatedRoute) { 
+      window.scroll({ 
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+      });
+    }
   
     /**
       * Récupérer l'étudiant séléctionné en fonction de son index

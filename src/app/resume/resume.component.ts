@@ -50,7 +50,13 @@ export class ResumeComponent implements OnInit {
   };
   public chartClicked(e: any): void { }
   public chartHovered(e: any): void { }
-    constructor() { }
+    constructor() {
+      window.scroll({ 
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+      });
+     }
 
     ngOnInit(): void {
     }

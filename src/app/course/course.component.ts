@@ -17,21 +17,19 @@ export class CourseComponent implements OnInit {
     indexCourse: number = 0;
     faStar = faStar;
     faChevronLeft = faChevronLeft;
-
-    gotoTop() {
-      window.scroll({ 
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth' 
-      });
-    }
   
     /**
       * Constructeur
       * @param {CoursesService} servCours le service d'accès aux données du fichier etudiants.json
       * @param {ActivatedRoute} routeParametres le service d'accès aux routes
       */
-    constructor(public servCourses:CoursesService, private routeParametres:ActivatedRoute) { }
+    constructor(public servCourses:CoursesService, private routeParametres:ActivatedRoute) { 
+      window.scroll({ 
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+      });
+    }
   
     /**
       * Récupérer l'étudiant séléctionné en fonction de son index
