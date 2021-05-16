@@ -27,6 +27,15 @@
                         </tr>
                     </tbody>
                 </table>
+                <div *ngFor="let content of servCourses.listCourses[indexCourse].contents">
+                    <h4>{{content.title}}</h4>
+                    <div *ngIf="content.img.exist" class="row justify-content-center">
+                        <img class="img-fluid rounded mb-5" src={{content.img.img}} alt="" />
+                    </div>
+                    <p *ngFor="let paragraph of content.paragraphs"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{{paragraph}}</p>
+                    <br>
+                </div>
+                
                 <!-- About Section Button-->
                 <div class="text-center mt-4b">
                     <a class="btn btn-xl btn-outline-light bg-info" href routerLink="/courses">

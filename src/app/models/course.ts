@@ -7,4 +7,5 @@
     hour?:string;
     teacher?:string;
     img?:string;
+    contents?:any;
 }
