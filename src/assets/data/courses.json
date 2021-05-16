@@ -22,8 +22,8 @@
                     "img": ""
                 },
                 "paragraphs": [
-                    "Elasticsearch est un moteur de recherche et d'analyse RESTful distribué dans lequel tous les champs sont indexés. Il permet de centraliser le stockage des données et assure une recherche rapide, une grande pertinance et des analyses aussi puissantes que scalables sur des centaines de serveurs.",
-                    "Elasticsearch a été créé en en 2010 par Shay Banon. Il est basé sur Apache Lucene. Lucene est une librairie Java d'indexation et de recherche très puissante, très complexe et exposant peu de fonctionnalités haut niveau. L'entreprise qui développe cet outil et fourni formations, conférences, produits annexex, webinar et support est Elastic (ElasticSearch BV). Il existe une suite de logiciel payants qui sont : X-pack, Elastic Cloud et ECE, Search as A Platform."
+                    "Elasticsearch est un moteur de recherche et d'analyse RESTful distribuée dans lequel tous les champs sont indexés. Il permet de centraliser le stockage des données et assure une recherche rapide, une grande pertinence et des analyses aussi puissantes que scalables sur des centaines de serveurs.",
+                    "Elasticsearch a été créé en 2010 par Shay Banon. Il est basé sur Apache Lucene. Lucene est une librairie Java d'indexation et de recherche très puissante, très complexe et exposant peu de fonctionnalités haut niveau. L'entreprise qui développe cet outil et fourni formations, conférences, produits annexes, webinar et support est Elastic (ElasticSearch BV). Il existe une suite de logiciels payants qui sont : X-pack, Elastic Cloud et ECE, Search as A Platform."
                 ]
             },
             {
@@ -33,10 +33,10 @@
                     "img": "assets/img/portfolio/Cluster.png"
                 },
                 "paragraphs": [
-                    "Un document est structuré comme un objet JSON et apprtient à un type qui définit sa structure.",
+                    "Un document est structuré comme un objet JSON et appartient à un type qui définit sa structure.",
                     "Un shard est une instance de Lucene contenant les documents. Il existe deux types de shards: Primary et Replica. Un Primary Shard est une partition de l'index. Le Replica Shard est une copie du Primary Shard.",
                     "Un index est un espace de stockage de documents de même type qui contient les shards. Il est découpé sur un ou plusieurs Primary Shards. Il peut être répliqué sur zéro ou plusieurs Replica Shards.",
-                    "Un node est une instance d'Elasticsearch en cours d'exécution. Un cluster est un ensemble de nodes. Parmis tous les nodes présant dans le cluster, un est élu automatiquement master. Le noeud master est responsable des opérations à l'échelle du cluster ( ajout et supression d'index, gestion des noeuds, etc.). Tous les nodes savent faire toutes les opérations, ce qui permet de remplacer le node master rapidement en cas de défaillance."
+                    "Un node est une instance d'Elasticsearch en cours d'exécution. Un cluster est un ensemble de nodes. Parmi tous les nodes présents dans le cluster, un est élu automatiquement master. Le noeud master est responsable des opérations à l'échelle du cluster (ajout et suppression d'index, gestion des noeuds, etc.). Tous les nodes savent faire toutes les opérations, ce qui permet de remplacer le node master rapidement en cas de défaillance."
                 ]
             },
             {
@@ -57,8 +57,8 @@
                 },
                 "paragraphs": [
                     "Cerebro est un outil d'administration Web permettant la gestion de Clusters. C'est un outil open-source. Cerebro permet de visualiser l'ensemble des noeuds en montrant des informations représentant l'usage de la mémoire, de l'espace disque, du cpu et du load average.",
-                    "Dans Cerebro, il existe trois statuts possible représenté par un code couleur. Vert: tous les shards sont actifs, Jaune: tous les shars sont actifs mais certains Replica Shards sont manquants ou non assignés, Rouge: un ou plusieurs Primary Shards sont inactifs.",
-                    "Lorsque un node est ajouté, on peut observer dans Cerebro que les shards se repartissent automatiquement. On peut également observer que le CPU et la RAM de chaque node sont utilisés par moins de shards et donc que les preformances sont meilleures."
+                    "Dans Cerebro, il existe trois statuts possibles représentés par un code couleur. Vert: tous les shards sont actifs, Jaune: tous les shards sont actifs mais certains Replica Shards sont manquants ou non assignés, Rouge: un ou plusieurs Primary Shards sont inactifs.",
+                    "Lorsqu'un node est ajouté, on peut observer dans Cerebro que les shards se repartissent automatiquement. On peut également observer que le CPU et la RAM de chaque node sont utilisés par moins de shards et donc que les performances sont meilleures."
                 ]
             }
         ]
@@ -165,13 +165,25 @@
         "img": "assets/img/portfolio/softwareCraftsmanship.png",
         "contents": [
             {
-                "title": "Open Cloud",
+                "title": "La dette technique",
                 "img": {
                     "exist": false,
                     "img": ""
                 },
                 "paragraphs": [
+                    "Les développeurs consacrent en moyenne 42% de leur temps à la maintenance de code. Cela est dû à la dette technique cumulée sur chaque projet. Les raisons de cette dette sont nombreuses: la présence de nombreuses règles, l'évolution des technologies, les urgences et la pression des délais de livraison, l'hétérogénéité dans l'équipe de développement, le manque d'attention, la diffusion des bonnes pratiques. Cette dette technique a un impact négatif sur les développeurs comme le découragement, la lenteur, la perte de créativité et l'érosion des compétences."
                     
+                ]
+            },
+            {
+                "title": "Software Craftsmanship",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Le Software Craftsmanship est un concept ayant pour valeur principale de bien concevoir un logiciel en plus de sa fonctionnalité. Plus précisément cela consiste à remettre en question certaines pratiques de développement pour favoriser la maintenance du logiciel.",
+                    "Pour mener à bien ce concept, les développeurs adeptes de cette méthode devront utiliser des outils tels qu'une application permettant de nettoyer le code ou le développement dirigé par de nombreux tests. L'essence de ce concept est d'évoluer en continu et pour cela une communauté existe permettant de favoriser cela. Il est nécessaire que les développeurs s'appuient sur des outils d'intégration continue afin de réduire le feedback, aient une propriété collective du code, travaillent ensemble, établissent des standards de développement collectifs."                  
                 ]
             }
         ]
