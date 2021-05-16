@@ -1,0 +1,192 @@
+[
+    {
+        "name": "Elastic Search",
+        "hour": "14.00",
+        "teacher": "Benjamin Clay",
+        "img": "assets/img/portfolio/elasticSearch.png",
+        "contents": [
+            {
+                "title": "Index de recherche",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "L'indexation permet d'extraire des mots présents dans des documents et de les placer dans un index. Cet index est appelé index inversé. L'utilisation d'index inversé permet de ne pas scanner tous les documents d'un data-store. On peut donc affirmer que stocker des données dans un index permet d'optimiser la performance des recherches."
+                ]
+            },
+            {
+                "title": "Elasticsearch",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Elasticsearch est un moteur de recherche et d'analyse RESTful distribuée dans lequel tous les champs sont indexés. Il permet de centraliser le stockage des données et assure une recherche rapide, une grande pertinence et des analyses aussi puissantes que scalables sur des centaines de serveurs.",
+                    "Elasticsearch a été créé en 2010 par Shay Banon. Il est basé sur Apache Lucene. Lucene est une librairie Java d'indexation et de recherche très puissante, très complexe et exposant peu de fonctionnalités haut niveau. L'entreprise qui développe cet outil et fourni formations, conférences, produits annexes, webinar et support est Elastic (ElasticSearch BV). Il existe une suite de logiciels payants qui sont : X-pack, Elastic Cloud et ECE, Search as A Platform."
+                ]
+            },
+            {
+                "title": "Composition d'un Cluster",
+                "img": {
+                    "exist": true,
+                    "img": "assets/img/portfolio/Cluster.png"
+                },
+                "paragraphs": [
+                    "Un document est structuré comme un objet JSON et appartient à un type qui définit sa structure.",
+                    "Un shard est une instance de Lucene contenant les documents. Il existe deux types de shards: Primary et Replica. Un Primary Shard est une partition de l'index. Le Replica Shard est une copie du Primary Shard.",
+                    "Un index est un espace de stockage de documents de même type qui contient les shards. Il est découpé sur un ou plusieurs Primary Shards. Il peut être répliqué sur zéro ou plusieurs Replica Shards.",
+                    "Un node est une instance d'Elasticsearch en cours d'exécution. Un cluster est un ensemble de nodes. Parmi tous les nodes présents dans le cluster, un est élu automatiquement master. Le noeud master est responsable des opérations à l'échelle du cluster (ajout et suppression d'index, gestion des noeuds, etc.). Tous les nodes savent faire toutes les opérations, ce qui permet de remplacer le node master rapidement en cas de défaillance."
+                ]
+            },
+            {
+                "title": "Kibana",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Kibana permet la recherche, la visualisation et l'interaction de données indexées dans Elasticsearch. C'est une application front-end open-source et gratuite. Kibana est constitué d'un tableau de bord permettant l'affichage d'une vue analytique en temps réel sur de grands volumes de données."
+                ]
+            },
+            {
+                "title": "Cerebro",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Cerebro est un outil d'administration Web permettant la gestion de Clusters. C'est un outil open-source. Cerebro permet de visualiser l'ensemble des noeuds en montrant des informations représentant l'usage de la mémoire, de l'espace disque, du cpu et du load average.",
+                    "Dans Cerebro, il existe trois statuts possibles représentés par un code couleur. Vert: tous les shards sont actifs, Jaune: tous les shards sont actifs mais certains Replica Shards sont manquants ou non assignés, Rouge: un ou plusieurs Primary Shards sont inactifs.",
+                    "Lorsqu'un node est ajouté, on peut observer dans Cerebro que les shards se repartissent automatiquement. On peut également observer que le CPU et la RAM de chaque node sont utilisés par moins de shards et donc que les performances sont meilleures."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Open Cloud",
+        "hour": "3.00",
+        "teacher": "Vincent Dupoy",
+        "img": "assets/img/portfolio/openCloud.png",
+        "contents": [
+            {
+                "title": "Open Cloud",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Le Cloud Computing permet d'accéder à des services de stockage et à des logiciels en ligne. L'Open Source un logiciel dont le code est laissé en accès libre. L'Open design consiste à disposer publiquement des informations de conceptions. Le terme Open Cloud désigne les technologies Open Sources et Open design appliquées au Cloud Computing.",
+                    "Les prochaines technologies citées seront des technologies Open Cloud. Kubernetes est un gestionnaire de provisionnement de conteneur sur un cluster. OpenNebula permet de gérer de manière centralisée une infrastructure virtuelle hétérogène. OpenStack regroupe différents logiciels Open Source sous licence Apache."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "RGPD",
+        "hour": "10.30",
+        "teacher": "Lucie Anglade",
+        "img": "assets/img/portfolio/rgpd.png",
+        "contents": [
+            {
+                "title": "Données personnelles",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Les données personnelles concernent les informations se rapportant à une personne physique identifiée ou identifiable. Une personne peut être identifiée directement grâce à son prénom et son nom ou indirectement grâce à un identifiant ou à des éléments spécifiques propres à son identité. L'identification d'une personne physique peut être réalisée à partir d'une seule donnée (exemple : l'ADN) ou à partir d'un ensemble de données.",
+                    "Le traitement de données personnelles est un ensemble d'opérations (informatisées ou matérielles) qui sont : collecte, enregistrement, organisation, conservation, adaptation, modification, extraction, consultation, utilisation, communication, mise à disposition et rapprochement. Le traitement de données est protégé et doit obligatoirement avoir un objectif."
+                ]
+            },
+            {
+                "title": "RGPD",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Le RGPD ou Règlement Général sur la Protection des Données permet d'encadrer le traitement des données au niveau de l'Union Européenne. Ce règlement s'adapte en fonction de la société ainsi que des évolutions technologiques et permet de renforcer le contrôle par les citoyens de l'utilisation de leurs données personnelles.",
+                    "D'après la définition du CNIL, le RGPD  s’applique à toute organisation, publique et privée, qui traite des données personnelles pour son compte ou non, dès qu'elle est établie sur le territoire de l’Union européenne ou que son activité cible directement des résidents européens.",
+                    "Le RGPD consiste surtout à suivre des axes principaux qui sont: être responsable de son traitement de données, des moyens mis en place ainsi que de ses objectifs, avoir un registre des différents traitements de données utilisés, trier les données et identifier les différents risques, respecter les droits des personnes et sécuriser les données."
+                ]
+            },
+            {
+                "title": "L'accountability",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Pour être en règle les entreprises devront respecter l'accountability, c'est-à-dire que les organismes devront mettre en oeuvre des mécanismes et des procédures internes pour démontrer le respect des règles relatives à la protection des données.",
+                    "Les mécanismes et procédures attendues sont : la cartographie des traitements de données personnelles, les actions correctives à mener en fonction de l'issue de l'établissement de la cartographie, la gestion des risques, les processus permettant d'assurer la sécurité des droits et libertés des personnes concernées, la définition du risque et documenter l'ensemble des mesures de mise en conformité au RGPD effectuées.",
+                    "Le RGPD prend en compte la notion de Privacy by design. C'est-à-dire que dès la conception du projet, il est nécessaire de réfléchir et documenter les notions concernant les données. Les entreprises doivent donc justifier, grâce à une documentation, du fait que les données sont indispensables, qu'elles sont sécurisées et qu'il n'y a pas de profilage non justifié."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Lean Management",
+        "hour": "14.00",
+        "teacher": "Nicolas Ploquin",
+        "img": "assets/img/portfolio/leanManagement.png",
+        "contents": [
+            {
+                "title": "Méthode Agile",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "La méthode Agile est une méthodologie de gestion de projet. L'objectif de cette méthode est de mettre le client au centre du projet. Pour cela le client est présent dans la réalisation du projet du début jusqu'à la fin. La présence du client permet à l'équipe d'obtenir un feedback régulier ce qui permet d'appliquer rapidement les modifications nécessaires. Cette méthode assure la réalisation d'un logiciel fonctionnel et accélère son développement.",
+                    "Le principe de la méthode agile consiste à proposer une version minimale du projet au client. Ensuite, des fonctionnalités supplémentaires sont ajoutées à cette base à l'aide d'un processus itératif. Le processus itératif est constitué de quatre instructions : le développement de l'application, l'intégration, l'amélioration des codes et les tests unitaires.",
+                    "La méthode agile repose sur quatre principes. Le premier est la collaboration au sein de l'équipe passant avant les outils et les processus. Le deuxième est la relation équipe/client qui est privilégié face à la négociation contractuelle. Le troisième est la mise en avant du projet face à la documentation. Enfin, le dernier principe est la flexibilité du projet face à un plan rigide. Pour mener à bien cette méthodologie, une réunion journalière est effectuée permettant de relater les faits, partager les actions à prévoir et exprimer les difficultés rencontrées."
+                ]
+            },
+            {
+                "title": "Scrum",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Scrum est la méthode agile la plus utilisée. Le concept est de s'appuyer sur des sprints d'une durée assez courte ( généralement deux semaines). A la fin de chaque sprint, l'équipe montre ce qui a été ajouté au produit. La méthode Scrum est constitué de trois acteurs présentés ci-dessous.",
+                    "L'équipe est constitué de personnel qualifié. Elle a pour objectif de développer le projet à travers les différents sprints. Dans une métode Scrum, l'équipe n'a pas de hérarchie interne et est donc auto-organisé.",
+                    "Le Scrum Master a pour objectif d'améliorer la capacité de production de l'équipe. Pour cela, il accompagne l'équipe à devenir autonome tout en s'améliorant. Le Scrum Master est un membre de l'équipe.",
+                    "Le Product Owner est le lien entre le client et l'équipe. Il a pour objectif de communiquer les besoins du clients. Il doit également se coordoner avec les autres Product Owners pour assurer une cohérence."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Software Craftsmanship",
+        "hour": "14.00",
+        "teacher": "Benjamin Clay",
+        "img": "assets/img/portfolio/softwareCraftsmanship.png",
+        "contents": [
+            {
+                "title": "La dette technique",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Les développeurs consacrent en moyenne 42% de leur temps à la maintenance de code. Cela est dû à la dette technique cumulée sur chaque projet. Les raisons de cette dette sont nombreuses: la présence de nombreuses règles, l'évolution des technologies, les urgences et la pression des délais de livraison, l'hétérogénéité dans l'équipe de développement, le manque d'attention, la diffusion des bonnes pratiques. Cette dette technique a un impact négatif sur les développeurs comme le découragement, la lenteur, la perte de créativité et l'érosion des compétences."
+                    
+                ]
+            },
+            {
+                "title": "Software Craftsmanship",
+                "img": {
+                    "exist": false,
+                    "img": ""
+                },
+                "paragraphs": [
+                    "Le Software Craftsmanship est un concept ayant pour valeur principale de bien concevoir un logiciel en plus de sa fonctionnalité. Plus précisément cela consiste à remettre en question certaines pratiques de développement pour favoriser la maintenance du logiciel.",
+                    "Pour mener à bien ce concept, les développeurs adeptes de cette méthode devront utiliser des outils tels qu'une application permettant de nettoyer le code ou le développement dirigé par de nombreux tests. L'essence de ce concept est d'évoluer en continu et pour cela une communauté existe permettant de favoriser cela. Il est nécessaire que les développeurs s'appuient sur des outils d'intégration continue afin de réduire le feedback, aient une propriété collective du code, travaillent ensemble, établissent des standards de développement collectifs."                  
+                ]
+            }
+        ]
+    }
+    
+]

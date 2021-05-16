@@ -1,0 +1,101 @@
+{
+    "navbar": {
+        "resume": "CV",
+        "courses" : "Cours",
+        "projects": "Projets"
+    },
+    "profile": { 
+        "iam": [
+            "Je suis étudiante en dernière année d'école d'ingénieurs en informatique option Ingénierie du Cloud Computing à CY Tech Pau (anciennement EISTI).",
+            "Je suis en contrat de professionnalisation à Capgemini Pau pour la durée d'un an.",
+            "Je suis passionnée par l'informatique. J'aime apprendre de nouveaux concepts et travailler ma logique au quotidien grâce à de nombreux exercices.",
+            "Je suis développeuse full-stack à la recherche d'un emploi à partir de septembre 2021 dans le domaine du DevOps aux alentours de Toulouse ou Bordeaux."
+        ],
+        "resume": {
+            "title": "Mon Curriculum Vitae",
+            "background": {
+                "title": "Formation",
+                "tabback": [
+                    {
+                        "date": "2018",
+                        "diploma": "Licence Informatique",
+                        "place": "Université de Pau et des Pays de l’Adour – 64000 Pau, France."
+                    },
+                    {
+                        "date": "2018 - Maintenant",
+                        "diploma": "Formation d'ingénieur en informatique option Ingénierie du Cloud Computing",
+                        "place": "CY Tech - 64000 Pau, France."
+                    }
+                ]                      
+            },
+            "experiences": {
+                "title": "Expériences professionnelles",
+                "tabexp": [
+                    {
+                        "date":"06/2018 - 08/2018",
+                        "work":"Stage de programmation web",
+                        "place":"Université des sciences et des technologies de Hanoi - Vietnam.",
+                        "tabtask": [
+                            {
+                                "task":"Mission réalisée : Développer une solution en JEE pour visualiser des graphes à l’aide d’une librairie open-source."
+                            },
+                            {
+                                "task": "Environnement de développement : NetBeans"
+                            },
+                            {
+                                "task": "Serveur web : Tomcat Apache."
+                            },
+                            {
+                                "task": "Librairie open-source : KnetMaps."
+                            }
+                        ]
+                    },
+                    {
+                        "date":"09/2020 - Maintenant",
+                        "work":"Contrat de professionnalisation en tant que full-stack développeuse",
+                        "place":"Capgemini - 64000 Pau.",
+                        "tabtask": [
+                            {
+                                "task":"Mission réalisée : Refonte de l'eXperience Utilisateur (UX) d'une application web."
+                            },
+                            {
+                                "task": "Front : AngularJS, HTML, CSS, Bootstrap."
+                            },
+                            {
+                                "task": "Back : C#, SQL Server."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "skills": {
+                "title": "Compétences",
+                "language": "Langages de programmation",
+                "technical": "Compétences Technique"
+            }
+        }
+    },
+    "projects": {
+        "title": "Mes projets",
+        "creator": "Créateur",
+        "objective": "Objectif",
+        "project": [
+            {
+                "goal": "Création d’un bot discord capable d’interagir avec l’api Chuck Norris Jokes."
+            },
+            {
+                "goal": "Créez un micro shell, que vous appellerez eistish, qui doit servir à lancer des commandes et à afficher les codes de sortie et les temps sur leur exécution."
+            }
+        ]
+    },
+    "courses": {
+        "title": "Mes cours",
+        "speaker": "Intervenant",
+        "hour": "Nombre d'heures"
+    },
+    "back": "retour",
+    "footer": {
+        "copyright": "Tous droits réservés.", 
+        "web": "Sur le web"
+    }
+}

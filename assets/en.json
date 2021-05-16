@@ -1,0 +1,102 @@
+{
+    "navbar": {
+        "resume": "Resume",
+        "courses": "Courses",
+        "projects": "Projects"
+    },
+    "profile": {
+        "iam": [
+            "I am a student in my last year of engineering school in computer science option Cloud Computing Engineering at CY Tech Pau (formerly EISTI).",
+            "I am on a one-year professionalization contract at Capgemini Pau.",
+            "I am passionate about computers. I like to learn new concepts and work on my logic on a daily basis through numerous exercises.",
+            "I am a full-stack developer looking for a job from September 2021 in the DevOps area around Toulouse or Bordeaux.I am a full-stack developer looking for a job from September 2021 in the DevOps area around Toulouse or Bordeaux."  
+        ],
+        "resume": {
+            "title": "My Resume",
+            "background": {
+                "title": "Background",
+                "tabback": [
+                    {
+                        "date": "2018",
+                        "diploma": "Computer Science Degree",
+                        "place": "University of Pau and Pays de l'Adour - 64000 Pau, France."
+                    },
+                    {
+                        "date": "2018 - Now",
+                        "diploma": "Training as a computer science engineer option Cloud Computing Engineering",
+                        "place": "CY Tech - 64000 Pau, France."
+                    }
+                ]
+            },
+            "experiences": {
+                "title": "Professional Experience",
+                "tabexp": [
+                    {
+                        "date":"06/2018 - 08/2018",
+                        "work":"Internship in web programming",
+                        "place":"University of Science and Technology of Hanoi – Vietnam.",
+                        "tabtask": [
+                            {
+                                "task":"Mission accomplished: Develop a JEE solution to visualize graphs using an open-source library."
+                            },
+                            {
+                                "task": "Development environment : NetBeans."
+                            },
+                            {
+                                "task": "Web server : Tomcat Apache."
+                            },
+                            {
+                                "task": "Open-source library : KnetMaps."
+                            }
+                        ]
+                    },
+                    {
+                        "date":"09/2020 - Now",
+                        "work":"Professionalization contract as a full-stack developer",
+                        "place":"Capgemini - 64000 Pau.",
+                        "tabtask": [
+                            {
+                                "task":"Mission accomplished: Redesign of the User eXperience (UX) of a web application."
+                            },
+                            {
+                                "task": "Front : AngularJS, HTML, CSS, Bootstrap."
+                            },
+                            {
+                                "task": "Back : C#, SQL Server."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "skills": {
+                "title": "Skills",
+                "language": "Programming languages",
+                "technical": "Technical Skills"
+            }
+        }
+    },
+    "projects": {
+        "title": "My projects",
+        "creator": "Creator",
+        "objective": "Objective",
+        "project": [
+            {
+                "goal": "Creation of a discord bot able to interact with the Chuck Norris Jokes api."
+            },
+            {
+                "goal": "Create a micro shell, which you will call eistish, to be used to launch commands and to display output codes and times on their execution."
+            }
+        ]
+    },
+    "courses": {
+        "title": "My courses",
+        "speaker": "Speaker",
+        "hour": "Number of hours"
+    },
+    "back": "back",
+    "footer": {
+        "copyright": "All rights reserved.", 
+        "web": "Around the Web"
+    }
+
+}
